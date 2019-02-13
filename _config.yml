@@ -1,6 +1,6 @@
 # Site settings
-name: Travelogue
-description: 'A minimal, single-column Jekyll theme that provides an immersive read experience for your readers'
+name: DAN-DY.
+description: 'My Journey | My Food | My Art'
 
 baseurl: '/dan-dy' # the subpath of your site, e.g. /blog
 url: 'http://choidaniel.info' # the base hostname & protocol for your site
@@ -15,9 +15,9 @@ paginate:            8
 paginate_path:       page/:num/
 
 author:
-    name: 'Salvatore Gentile'
-    email: ''
-    uri: 'https://github.com/SalGnt'
+    name: 'Daniel Choi'
+    email: 'dschoi3@illinois.edu'
+    uri: 'https://github.com/choiboy98'
 
 sass:
     sass_dir: _sass
@@ -29,9 +29,9 @@ defaults:
         path: '_posts'
         type: 'posts'
       values:
-        reading_time: true
+        # reading_time: true
         # Meta
-        show_tags: true
+        # show_tags: true
         show_categories: true
         # Social
         share_buttons: true
