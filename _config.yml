@@ -2,7 +2,7 @@
 name: Travelogue
 description: 'A minimal, single-column Jekyll theme that provides an immersive read experience for your readers'
 
-baseurl: '/dandy' # the subpath of your site, e.g. /blog
+baseurl: '/dan-dy' # the subpath of your site, e.g. /blog
 url: 'http://choidaniel.info' # the base hostname & protocol for your site
 
 # Build settings
