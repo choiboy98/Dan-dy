@@ -8,7 +8,7 @@
 }
 
 .container {
-    background: #ffe4e1;
+    background: $background-color;
     padding: 0;
     position: relative;
     margin: 0 auto;
@@ -33,6 +33,7 @@
 }
 
 .pagination {
+    background: $dark-color;
     height: $spacing-unit;
     padding: ($spacing-unit / 4) 0;
 
