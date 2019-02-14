@@ -37,7 +37,7 @@
     padding: ($spacing-unit / 4) 0;
 
     .navigator {
-        color: transparent !important;
+        color: $grey-color-dark !important;
         float: left;
         font-family: $base-font-family-sans;
         font-weight: 700;
