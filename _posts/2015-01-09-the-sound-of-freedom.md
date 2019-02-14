@@ -3,8 +3,8 @@ layout: post
 title: "The Sound of Freedom"
 date: 2015-01-09
 backgrounds:
-    - ../assets/images/dandy_logo.png
-thumb: ../assets/images/dandy_logo.png
+    - ../assets/images/dandy_logo_small.png
+thumb: ../assets/images/dandy_logo_small.png
 category: music
 tags: relax fun songs playlist
 ---
