@@ -1,86 +1,80 @@
 ---
-# Main
 ---
-@charset "utf-8";
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+@import 'font-awesome.min.css';
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic');
 
 /*
-   Variables
-   ========================================================================== */
-$base-font-family:      "Merriweather", serif;
-$base-font-family-sans: "Lato", sans-serif;
-$base-font-family-mono: "Source Code Pro", monospace;
-$base-font-size:        16px;
-$small-font-size:       $base-font-size * 0.875;
-$base-line-height:      1;
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
-$dark-color:       #111;
-$light-color:      #eee;
+	@include skel-breakpoints((
+		xlarge: '(max-width: 1680px)',
+		large: '(max-width: 1280px)',
+		medium: '(max-width: 980px)',
+		small: '(max-width: 736px)',
+		xsmall: '(max-width: 480px)',
+		xxsmall: '(max-width: 360px)'
+	));
 
-$text-color:       $dark-color;
-$text-color-light: $light-color;
-$background-color: #fdfdfd;
-$brand-color:      #e74c3c;
-$brand-color-2:    #7D8866;
+	@include skel-layout((
+		reset: 'full',
+		boxModel: 'border',
+		grid: ( gutters: 2em ),
+		breakpoints: (
+			large: (
+				grid: ( gutters: 1.5em )
+			),
+			small: (
+				grid: ( gutters: 1.25em )
+			)
+		)
+	));
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 35%);
-$grey-color-dark:  darken($grey-color, 20%);
+	@mixin inner {
+		> .inner {
+			@include padding(4em, 0);
+			margin: 0 auto;
+			max-width: _size(inner);
+			width: calc(100% - 6em);
 
-$content-width:    700px;
-$spacing-unit:     60px;
+			@include breakpoint(small) {
+				@include padding(3em, 0);
+				width: calc(100% - 3em);
+			}
+		}
+	}
 
-$on-palm:          799px;
-$on-laptop:        800px;
+// Base.
 
-$radius:           6px;
-$transition-base:  all 200ms linear;
-$transition-nav:   all 500ms linear;
+	@import 'base/page';
+	@import 'base/typography';
 
-/*
-   Mixins
-   ========================================================================== */
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
+// Component.
 
-@mixin border-radius($radius) {
-    -webkit-border-radius: $radius;
-    -moz-border-radius:    $radius;
-    -ms-border-radius:     $radius;
-    border-radius:         $radius;
-}
+	@import 'components/section';
+	@import 'components/form';
+	@import 'components/box';
+	@import 'components/icon';
+	@import 'components/image';
+	@import 'components/list';
+	@import 'components/table';
+	@import 'components/button';
+	@import 'components/tiles';
+	@import 'components/contact-method';
+	@import 'components/spotlights';
 
-@mixin flex-wrap($value) {
-    -webkit-flex-wrap: $value;
-    -moz-flex-wrap:    $value;
-    -ms-flex-wrap:     $value;
-    flex-wrap:         $value;
-}
+// Layout.
 
-@mixin transform($args...) {
-    -webkit-transform: $args;
-    -moz-transform:    $args;
-    -o-transform:      $args;
-    transform:         $args;
-}
-
-@mixin transition($args...) {
-    -webkit-transition: $args;
-    -moz-transition:    $args;
-    -ms-transition:     $args;
-    -o-transition:      $args;
-    transition:         $args;
-}
-
-/*
-   Import
-   ========================================================================== */
-@import
-    "base",
-    "layout",
-    "sidebar",
-    "loader",
-    "syntax-highlighting"
-;
+	@import 'layout/header';
+	@import 'layout/banner';
+	@import 'layout/main';
+	@import 'layout/contact';
+	@import 'layout/footer';
+	@import 'layout/wrapper';
+	@import 'layout/menu';

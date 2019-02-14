@@ -1,61 +1,36 @@
----
-layout: default
----
-<div class="post">
-    {% if page.reading_time %}
-    <p class="post-reading-time">&#126;
-        {% capture words %}
-          {{ content | number_of_words | minus: 180 }}
-        {% endcapture %}
-        {% unless words contains "-" %}
-          {{ words | plus: 180 | divided_by: 180 | append: " min" }}
-        {% endunless %}
-    </p>
-    {% endif %}
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
 
-    <header class="post-header">
-        {% if page.thumb %}
-        <img src="{{ page.thumb }}" alt="{{ page.title }}" class="post-thumb" />
-        {% endif %}
+{% include head.html %}
 
-        <h1 class="post-title">{{ page.title }}</h1>
-    </header>
+<body>
 
-    <article class="post-content">
-        {{ content }}
-    </article>
+    {% include header.html %} 
+    
+    
+<!-- Main -->
+<div id="main" class="alt">
 
-    <footer class="post-meta">
-        {% if page.author %}
-        <div class="meta">
-            <h3 class="meta-title">Author</h3>
-            <span class="meta-content">{{ page.author }}</span>
-        </div>
-        {% endif %}
-        {% if page.show_categories %}
-        <div class="meta">
-            <h3 class="meta-title">Categories</h3>
-            <span class="meta-content">
-                {% for category in page.categories %}
-                    {{ category | capitalize }}&nbsp;
-                {% endfor %}
-            </span>
-        </div>
-        {% endif %}
-        {% if page.show_tags %}
-        <div class="meta">
-            <h3 class="meta-title">Tags</h3>
-            <span class="meta-content">
-                {% for tag in page.tags %}
-                    {{ tag | capitalize }}&nbsp;
-                {% endfor %}
-            </span>
-        </div>
-        {% endif %}
-    </footer>
-
-    {% include share.html %}
-
-    {% include disqus.html %}
+<!-- One -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h1>{{ page.title }}</h1>
+		</header>
+		{% if page.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="" /></span>{% endif %}
+		<p>{{ content }}</p>
+	</div>
+</section>
 
 </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>
