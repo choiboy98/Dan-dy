@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "DAN-DY."
-date: 2015-01-09
+# date: 2015-01-09
 backgrounds:
     - assets/images/dandy_logo.png
-thumb: assets/images/dandy_logo.png
+# thumb: assets/images/dandy_logo.png
 category: music
 tags: relax fun songs playlist
 ---
