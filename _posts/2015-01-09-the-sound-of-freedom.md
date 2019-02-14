@@ -4,7 +4,7 @@ title: "The Sound of Freedom"
 date: 2015-01-09
 backgrounds:
     - www.choidaniel.info/dan-dy/public/images/dandy_logo_small.png
-thumb: www.choidaniel.info/dan-dy/public/images/dandy_logo_small.png
+thumb: www.choidaniel.info/dan-dy/assets/images/dandy_logo.png
 category: music
 tags: relax fun songs playlist
 ---
