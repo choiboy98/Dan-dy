@@ -1,17 +1,17 @@
 # site settings
 title: DAN-DY.
-subtitle: by 
-email: youremailaddress@gmail.com
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+subtitle: by Daniel Choi
+email: dschoi3@illinois.edu
+description: My Creation | My Food | My Art
 baseurl: "/dan-dy" # the subpath of your site, e.g. /blog
-url: # the base hostname & protocol for your site
-author:
-street_address: 1234 Somewhere Road
-city: Nashville
-state: TN
-zip_code: 55555
+url:
+author: Daniel Choi
+street_address: 205 E Stoughton St.
+city: Champaign
+state: IL
+zip_code: 68120
 country: United States of America
-phone: (716) 555-5555
+phone: ((425) 429-1986)
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
@@ -34,3 +34,6 @@ markdown: kramdown
 
 sass:
   style: compressed
+
+plugins:
+  - jekyll-seo-tag

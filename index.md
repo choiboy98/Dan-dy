@@ -2,7 +2,7 @@
 layout: home
 title: Home
 landing-title: 'DAN-DY.'
-description: null
+description: hello
 image: null
 author: null
 show_tile: false
