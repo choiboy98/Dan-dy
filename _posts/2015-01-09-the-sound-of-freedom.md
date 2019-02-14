@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "The Sound of Freedom"
+title: "DAN-DY."
 date: 2015-01-09
 backgrounds:
-    - www.choidaniel.info/dan-dy/public/images/dandy_logo_small.png
-thumb: www.choidaniel.info/dan-dy/assets/images/dandy_logo.png
+    - assets/images/dandy_logo.png
+thumb: assets/images/dandy_logo.png
 category: music
 tags: relax fun songs playlist
 ---
