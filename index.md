@@ -8,4 +8,4 @@ author: null
 show_tile: false
 ---
 
-Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.
+DAN-DY. is a POP-UP Restaurant based in Champaign, IL and Bellevue, WA. DAN-DY. usually serves 5 course menu for a party up to 4 people. DAN-DY. provides music, entertainment, and the mood for customers to enjoy. DAN-DY. was inspired by DENCH., Jimmy Wong's POP-UP restaurant based in California.
