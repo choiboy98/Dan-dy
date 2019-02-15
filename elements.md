@@ -2,6 +2,7 @@
 layout: page
 title: Menu
 description: 'Serving your need with delicious dinner'
+image: assets/images/IMG_6372.JPG
 nav-menu: true
 ---
 
